@@ -1,0 +1,94 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    color: white;
+   }
+  
+  #pagetop{
+  margin-top: 2rem;
+  background-image: url("/images/monster-1460885_1280.png");
+  height: 100px;
+  width: 100px;
+  margin-left: 100px;
+  } 
+  
+  h1{
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    margin-left: 300px;
+  }
+  
+  main{
+    margin-top: 1rem;
+  }
+   #searchbox{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-left: 1rem;
+   }
+  
+   #head-1{
+    margin-top: 2rem;
+    margin-left: 1rem;
+   }
+  
+   section{
+    margin-top: 2rem;
+   }
+  
+   #select{
+     border-radius: 30px;
+     color: black;
+     font-size: 20px;
+   }
+  
+   h2 {
+     font-size: 3rem;
+     font-weight: bolder;
+   }
+  
+   .card{
+     border-radius: 30px;
+     background-color: rgb(255, 217, 0);
+     
+   }
+  
+   #play-1{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 6rem;
+   }
+  
+   h4{
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+   }
+  
+  span{
+    color: white;
+    font-weight: bolder;
+  
+  } 
+  #head-2{
+    margin-top: 40px;
+    margin-left: 60px;
+  } 
+  
+  .music{
+    margin-left: 60px;
+  } 
+  
+  span {
+    margin-left: 20px;
+    font-size: 30px;
+   }
+  
+  .button{
+    margin-left: 120px;
+    border-radius: 16rem;
+  }
+  
