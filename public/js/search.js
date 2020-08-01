@@ -28,10 +28,9 @@ $(document).ready(function () {
 
 
             let results = data.results;
-            console.log("DATA.RESULTS: " + results);
 
                 $.each(results, function(index, results){
-                    $("#well-section").append("<br><br> <img src='" + results.artworkUrl100 + "'> <b>Artist: </b>" + results.artistName + " | <b>Song : </b> <a target='_blank' href='" + results.previewUrl + "'>" + results.trackName + "</a>" + " | <b>Album: </b>" + results.collectionName + " | <b>Genre: </b>" + results.primaryGenreName + "<br><br><hr><br><br>");
+                    $(".results-body").append("<br><br> <img src='" + results.artworkUrl100 + "'> <b>Artist: </b>" + results.artistName + " | <b>Song : </b> <a target='_blank' href='" + results.previewUrl + "'>" + results.trackName + "</a>" + " | <b>Album: </b>" + results.collectionName + " | <b>Genre: </b>" + results.primaryGenreName + "<br><br><hr><br><br>");
                 });
             });
         });
