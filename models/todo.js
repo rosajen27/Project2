@@ -1,7 +1,8 @@
 module.exports = function(sequelize, DataTypes) {
-  var Todo = sequelize.define("Todo", {
+  var songster = sequelize.define("Songster", {
     text: DataTypes.STRING,
     complete: DataTypes.BOOLEAN
   });
-  return Todo;
+  return songster;
 };
+
