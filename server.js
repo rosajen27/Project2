@@ -20,9 +20,18 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+// Routes
+require("./routes/api-routes.js")(app);
+// HTML routing to serve different HTML files
+require("./routes/html-routes.js")(app);
+
 
 // Start our server so that it can begin listening to client requests.
-app.listen(PORT, function() {
+
+db.sequelize.sync().then(function () {
   // Log (server-side) when our server has started
-  console.log("Server listening on PORT: " + PORT);
+  app.listen(PORT, function () {
+    console.log("App listening on PORT: " + PORT);
+  });
+
 });
