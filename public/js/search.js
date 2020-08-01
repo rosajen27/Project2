@@ -30,7 +30,7 @@ $(document).ready(function () {
             let results = data.results;
 
                 $.each(results, function(index, results){
-                    $(".results-body").append("<br><br> <img src='" + results.artworkUrl100 + "'> <b>Artist: </b>" + results.artistName + " | <b>Song : </b> <a target='_blank' href='" + results.previewUrl + "'>" + results.trackName + "</a>" + " | <b>Album: </b>" + results.collectionName + " | <b>Genre: </b>" + results.primaryGenreName + "<br><br><hr><br><br>");
+                    $(".results-body").prepend("<br><br> <img src='" + results.artworkUrl100 + "'> <b>Artist: </b>" + results.artistName + " | <b>Song : </b> <a target='_blank' href='" + results.previewUrl + "'>" + results.trackName + "</a>" + " | <b>Album: </b>" + results.collectionName + " | <b>Genre: </b>" + results.primaryGenreName + "<br><br><hr><br><br>");
                 });
             });
         });
