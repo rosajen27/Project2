@@ -2,44 +2,33 @@
 const db = require("../models");
 const express = require('express');
 const app = express();
-const exphbs = require('express-handlebars');
-const path = require('path');
-
-app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
-
-app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 module.exports = function(app) {
 
   // GET route for getting user search request
-  app.get("/api/search", function(req, res) {
-    db.Todo.findAll({}).then(function(songster_db) {
-      res.json(songster_db);
+  app.get("/api/songster", async function(req, res) {
+      res.json(await db.songster.findAll());
     });
-  });
+
 
   // POST route provides user option to select songs
-  app.post("/api/results", function(req, res) {
-    db.Todo.create({
-      text: req.body.text,
-      complete: req.body.complete
-    }).then(function(songster_db) {
-      res.json(songster_db);
-    });
-  });
+  app.post("/api/songster", async function(req, res) {
+      res.json(await db.songster_db.create({
+        text: req.body.text,
+        complete: req.body.complete
+      })
+    );
+  });    
 
   // DELETE route for deleting songs.
-  app.delete("/api/playlist/:id", function(req, res) {
-    db.Todo.destroy({
-      where: {
-        id: req.params.id
-      }
-    }).then(function(songster_db) {
-      res.json(songster_db);
-    });
-
+  app.delete("/api/songster/:id", async function(req, res) {
+      res.json(await db.songster_db.destroy({
+        where: {
+          id: req.params.id
+        }
+      })
+    );
   });
 
 };
