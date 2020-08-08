@@ -1,7 +1,7 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
-const methodOverride = require('method-override');
+// const methodOverride = require('method-override');
 const mysql = require("mysql");
 const path = require("path");
 
@@ -13,7 +13,7 @@ const app = express();
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(methodOverride("_method"));
+// app.use(methodOverride("_method"));
 
 app.use(express.static("public"));
 
