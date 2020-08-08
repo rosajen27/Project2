@@ -23,6 +23,8 @@ const orm = {
                 cb(null, data);
         });
     }
+
 };
+
 
 module.exports = orm;
