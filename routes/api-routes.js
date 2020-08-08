@@ -1,34 +1,76 @@
 // Dependencies
-const db = require("../models");
-const express = require('express');
-const app = express();
 
-// Routes
-module.exports = function(app) {
+const express = require("express");
+const router = express.Router();
 
-  // GET route for getting user search request
-  app.get("/api/songster", async function(req, res) {
-      res.json(await db.songster.findAll());
-    });
+const orm = require('../config/orm');
 
-
-  // POST route provides user option to select songs
-  app.post("/api/songster", async function(req, res) {
-      res.json(await db.songster_db.create({
-        text: req.body.text,
-        complete: req.body.complete
-      })
-    );
-  });    
-
-  // DELETE route for deleting songs.
-  app.delete("/api/songster/:id", async function(req, res) {
-      res.json(await db.songster_db.destroy({
-        where: {
-          id: req.params.id
+router.get("/", function (req, res) {
+    orm.selectAll(function (error, playlist) {
+        if (error) {
+            return res.status(501).json({
+                message: "Database content not available"
+            });
         }
-      })
-    );
-  });
+        console.log('playlist', playlist);
+        res.render('index', {playlist, style: 'index'});
+    });
+});
 
-};
+router.get("/results", function (req, res) {
+    orm.selectAll(function (error, playlist) {
+        if (error) {
+            return res.status(501).json({
+                message: "Database content not available"
+            });
+        }
+        console.log('playlist', playlist);
+        res.render('results', {playlist, style: 'results'});
+    });
+});
+
+router.post("/results", function (req, res) {
+    
+    var newSong = {
+        artist_name: req.body.artist_name,
+        song_name: req.body.song_name
+    };
+    orm.insertOne(newSong, function (error, newSong){
+        if (error) {
+            return res.status(401).json({
+                message: "Song request not available"
+            });
+        }
+        console.log("newSong", playlist);
+        res.render('results', {playlist, style: 'results'});
+    }) 
+});
+
+router.get("/playlist", function (req, res) {
+    orm.selectAll(function (error, playlist) {
+        if (error) {
+            return res.status(501).json({
+                message: "Database content not available"
+            });
+        }
+        console.log('playlist', playlist);
+        res.render('playlist', {playlist, style: 'playlist'});
+    });
+});
+
+router.delete('/results/:id', () => {
+    const id = req.params.id;
+
+    orm.deleteOne(id, function(err, playlist) {
+        if (error) {
+            return res. status(501).json({
+                message: "Not able to delete a song"
+            });
+        }
+        return res.json({
+            id
+        });
+    });    
+});
+
+module.exports = router;
