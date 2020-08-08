@@ -1,38 +1,47 @@
-    
-    
-    {{> header}}
+{{> header}}
 
-  <h2 id="head-2">Results</h2>
+<h2 id="head-2">Results</h2>
 
-  <ul>
+<ul>
   {{#each playlist }}
-          
-    <p>{{artist_name}}</p>   
-    <p>{{song_name}}</p>
+
+  <p>{{artist_name}}</p>
+  <p>{{song_name}}</p>
 
   {{/each}}
-  </ul>
-
-  <form>
-    <div class="row, results-body">
-      <div class="medium-4 columns">
-        <div class="vertical menu, music">
-          <div name="newSong" id="newSong">
-            <a href="#"><img src="./images/speaker-156844_1280.png" style="width:42px;height:42px;" alt="speaker"></a> 
-            <p><span>Artist</span></p>
-            <p><span>Song Title</span></p>
-          </div>
-          <button type="submit" class="warning button">Add</button>
-        </div>  
+</ul>
+<form class="create-form">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="small-9 cell">
+        <label id="searchbox">Search
+          <input id="search-input" type="search" placeholder="song or artist">
+        </label>
+        <button style="background: white" id="search-btn">Search</button>
       </div>
-    </div>          
-  </form>
+    </div>
+  </div>
+</form>
+<form>
+  <div class="row, results-body">
+    {{!-- <div class="medium-4 columns">
+      <div class="vertical menu, music">
+        <div name="newSong" id="newSong">
+          <a href="#"><img src="./images/speaker-156844_1280.png" style="width:42px;height:42px;" alt="speaker"></a>
+          <p><span>Artist</span></p>
+          <p><span>Song Title</span></p>
+        </div>
+        <button type="submit" class="warning button">Add</button>
+      </div>
+    </div> --}}
+  </div>
+</form>
 
 {{> footer}}
 
 
 
-    {{!-- {{#each playlist}}
+{{!-- {{#each playlist}}
 
       <p>{{artist_name}}</p>
       <p>{{song_name}}</p>
