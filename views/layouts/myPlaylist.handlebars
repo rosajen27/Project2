@@ -1,0 +1,31 @@
+
+
+{{>header}}
+      
+    <h2 id="head-2">My Playlist</h2> 
+
+  <ul>
+  {{#each playlist }}
+          
+    <p>{{artist_name}}</p>   
+    <p>{{song_name}}</p>
+
+  {{/each}}
+  </ul>
+
+  <form>
+    <div class="row, results-body">
+      <div class="medium-4 columns">
+        <div class="vertical menu, music">
+          <div name="userSong">
+            <a href="#"><img src="./images/music-1013975_1920.jpg" style="width:42px;height:42px; border-radius: 10px;"/> 
+            <p><span>Artist</span></p>
+            <p><span>Song Title</span></p>
+          </div>
+          <button type="button" class="warning button">Delete</button>
+        </div>  
+      </div>
+    </div>          
+  </form>
+
+{{>footer}}
