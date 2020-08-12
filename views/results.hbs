@@ -1,0 +1,22 @@
+{{>searchbar}}
+<ul class="results-list">
+    {{#if data}}
+    {{#each data}}
+    <li class="result-list-item">
+        <image src="{{this.artworkUrl100}}" />
+        <div>
+            <div>Artist: {{this.artistName}}</div>
+            <div>Track: {{this.trackName}}</div>
+            <div>Album: {{this.collectionName}}</div>
+            <div>Genre: {{this.primaryGenreName}}</div></span>
+        </div>
+
+        <button id="addSong" class="btn btn-primary btn-add"
+            onclick="addSong(event, { artist_name:'{{this.artistName}}', track_name:'{{this.trackName}}',album_name:'{{this.collectionName}}',artwork_url:'{{this.artworkUrl100}}',genre_name:'{{this.primaryGenreName}}'})">Add
+            to Playlist</button>
+    </li>
+    {{/each}}
+    {{else}}
+    <li class="list-group-item">No results found</li>
+    {{/if}}
+</ul>
