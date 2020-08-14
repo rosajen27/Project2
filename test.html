@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <script src="/assets/js/songsters.js"></script>
+  <title>title</title>
+</head>
+
+<body>
+  <main>
+    <h2 id="head-2">Results</h2>
+
+    <!-- Pass data from server.js-->
+
+    <section>
+      <div class="row, results-body">
+        <div class="medium-4 columns">
+          <ul class="vertical menu, music">
+
+
+
+
+            <li>
+              <a href="#"><img src="../images/speaker-156844_1280.png" style="width:42px;height:42px;"
+                  alt="speaker"></a>
+              <p><span>Artist</span> {{artist_name}}</p>
+              <p><span>Song Title</span> {{song_name}}</p>
+
+              <button type="submit" class="warning button" data-id"{{id}}" data-state="{{is_favorite}}">
+                {{#if is_favorite}} unfavorite {{else}} Add {{/if}}
+              </button>
+
+            </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>

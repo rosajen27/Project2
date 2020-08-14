@@ -1,37 +1,19 @@
-// API: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
-
-// artistName
-// trackName 
-// previewUrl (audio snippet of song)
-// collectionName (title of album)
-// artworkUrl100 (100x100 thumbnail of album cover)
-// primaryGenreName
-
-// This .on("click") function will trigger the AJAX Call
-$(document).ready(function () {
-    $("#search-btn").on("click", function (event) {
+(function (window, document, undefined) {
+    'use strict';
+    var searchButton = document.getElementById('searchButton');
+    var searchInput = document.getElementById('searchInput');
+    // when user clicks on button, we want to call function start search
+    searchButton.addEventListener('click', startSearch);
+    function startSearch(event) {
         event.preventDefault();
-
-        // grab text from the search-input box
-        var artist = $("#search-input").val().trim();
-
-        // hit the queryURL with $ajax, response will return an array with artist matching searched artist name
-        var queryURL = "https://itunes.apple.com/search?term=" + artist + "&entity"
-
-        // ajax get request
-        $.ajax({
-            url: queryURL,
-            type: 'post',
-            method: "GET",
-            dataType: 'json',
-        }).then(function (data) {
-
-
-            let results = data.results;
-
-                $.each(results, function(index, results){
-                    $(".results-body").prepend("<br><br> <img src='" + results.artworkUrl100 + "'> <b>Artist: </b>" + results.artistName + " | <b>Song : </b> <a target='_blank' href='" + results.previewUrl + "'>" + results.trackName + "</a>" + " | <b>Album: </b>" + results.collectionName + " | <b>Genre: </b>" + results.primaryGenreName + "<br><br><hr><br><br>");
-                });
-            });
-        });
-    });
+        var inputValue = document.getElementById('searchInput').value;
+        var urlBase = `${window.location.origin}`;
+        if (inputValue === null || inputValue === '') {
+            searchInput.classList.add('err');
+            return;
+        }
+        var searchUrl = `${urlBase}/results?term=${inputValue}&media=music`;
+        console.log(searchUrl);
+        window.location.replace(searchUrl);
+    }
+})(window, document);
