@@ -1,144 +1,144 @@
 body{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(7, 7, 7);
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   }
-  
-  #pagetop{
-  /*margin-top: 2rem;*/
-  background-image: url("/images/monster.png");
+  height: 100%;
+  width: 100%;
+  background-color: rgb(7, 7, 7);
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+#pagetop{
+/*margin-top: 2rem;*/
+background-image: url("/images/monster.png");
+height: 200px;
+width: 200px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin-left: 300px;
+} 
+
+#playlistTop{
+  background-image: url("/images/piano.jpg");
   height: 200px;
-  width: 200px;
+  width: 800px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#song-title{
+  margin-left: 350px;
+}
+
+h1{
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
   margin-left: 300px;
-  } 
-  
-  #playlistTop{
-    background-image: url("/images/piano.jpg");
-    height: 200px;
-    width: 800px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  #song-title{
-    margin-left: 350px;
-  }
-  
-  h1{
-    color: white;
-    font-size: 22px;
-    font-weight: bolder;
-    margin-left: 300px;
-  }
-  
-  main{
-    margin-top: 1rem;
-  }
-   #searchbox1{
-    color: white;
-    font-size: 3rem;
-    font-weight: bolder;
-    margin-left: 1rem;
-    margin-top: -2rem;
-   }
-  
-   #searchbox2{
-    color: white;
-    font-size: 3rem;
-    font-weight: bolder;
-    margin-left: 1rem;
-    margin-top: -8rem;
-   }
-  
-   #searchbox3{
-    color: white;
-    font-size: 3rem;
-    font-weight: bolder;
-    margin-left: 1rem;
-    margin-top: -8rem;
-   }
-  
-   #head-1{
-    margin-top: 2rem;
-    margin-left: 1rem;
-   }
-  
-   section{
-    margin-top: 10px;
-   }
-  
-   #select{
-     margin-top: 10px;
-     border-radius: 30px;
-     color: black;
-     font-size: 20px;
-   }
-  
-   h2 {
-     font-size: 3rem;
-     font-weight: bolder;
-   }
-  
-   .card{
-     border-radius: 30px;
-     background-color: rgb(238, 185, 10);
-     
-   }
-  
-   #play-1{
-    margin-top: 3rem;
-    margin-left: 1rem;
-    margin-bottom: 6rem;
-   }
-  
-   h4{
-    color: white;
-    font-size: 2rem;
-    font-weight: bolder;
-   }
-  
-   .billboardText{
-     color: white;
-   }
-  
-  span{
-    color: white;
-    font-weight: bolder;
-  
-  } 
-  #head-2{
-    margin-top: 20px;
-    margin-left: 60px;
-  } 
-  
-  #head-3{
-    margin-top: 20px;
-    margin-left: 60px;
-  } 
-  
-  .music{
-    list-style: none;
-    margin-left: 60px;
-  } 
-  
-  span {
-    margin-left: 20px;
-    font-size: 30px;
-   }
-  
-  .button{
-    margin-left: 80px;
-    border-radius: 16rem;
-  }
-  
-  .endOfPage {
-    background-color: rgb(238, 185, 10);
-    height: 100px;
-    width: 100%;
-  }
+}
+
+main{
+  margin-top: 1rem;
+}
+ #searchbox1{
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-left: 1rem;
+  margin-top: -2rem;
+ }
+
+ #searchbox2{
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-left: 1rem;
+  margin-top: -8rem;
+ }
+
+ #searchbox3{
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-left: 1rem;
+  margin-top: -8rem;
+ }
+
+ #head-1{
+  margin-top: 2rem;
+  margin-left: 1rem;
+ }
+
+ section{
+  margin-top: 10px;
+ }
+
+ #select{
+   margin-top: 10px;
+   border-radius: 30px;
+   color: black;
+   font-size: 20px;
+ }
+
+ h2 {
+   font-size: 3rem;
+   font-weight: bolder;
+ }
+
+ .card{
+   border-radius: 30px;
+   background-color: rgb(238, 185, 10);
+   min-height: 150px;
+ }
+
+ #play-1{
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-bottom: 6rem;
+ }
+
+ h4{
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+ }
+
+ .billboardText{
+   color: white;
+ }
+
+span{
+  color: white;
+  font-weight: bolder;
+
+} 
+#head-2{
+  margin-top: 20px;
+  margin-left: 60px;
+} 
+
+#head-3{
+  margin-top: 20px;
+  margin-left: 60px;
+} 
+
+.music{
+  list-style: none;
+  margin-left: 60px;
+} 
+
+span {
+  margin-left: 20px;
+  font-size: 30px;
+ }
+
+.button{
+  margin-left: 80px;
+  border-radius: 16rem;
+}
+
+.endOfPage {
+  background-color: rgb(238, 185, 10);
+  height: 100px;
+  width: 100%;
+}
