@@ -87,7 +87,7 @@ main{
  .card{
    border-radius: 30px;
    background-color: rgb(238, 185, 10);
-   
+   min-height: 150px;
  }
 
  #play-1{

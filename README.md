@@ -17,7 +17,9 @@ Users can also browse through top playlists of their favorite genre and add it t
 
 ## Deployment
 
-(img and deployment link here)
+Deployed Website:
+[!deploy1.jpg](./deploy1.jpg)
+[!deploy2.jpg](./deploy2.jpg)
 
 ## Built With
 
@@ -32,11 +34,10 @@ Users can also browse through top playlists of their favorite genre and add it t
 
 ## Installation 
 
-(how to install app)
+* npm install
+* npm run setup:db
+* node server.js
 
-## Usage
-
-(how to use app)
 
 ## Authors
   - **Felix Colon**
