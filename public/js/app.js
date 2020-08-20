@@ -1,6 +1,4 @@
-// This is all you need
-// var addButton = document.getElementById('addSong');
-// addButton.addEventListener('click', addSong);
+
 
 async function handleSearchClick(event) {
 	event.preventDefault();
@@ -36,6 +34,5 @@ function addSong(event, data = {}) {
 }
 
 function someFormattingFunction(str) {
-	// this probably isn't enough. you might need to google unescaping js regex
 	return str.replace(/[^\x20-\x7E]/g, "");
 }
