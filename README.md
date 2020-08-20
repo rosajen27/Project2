@@ -18,8 +18,8 @@ Users can also browse through top playlists of their favorite genre and add it t
 ## Deployment
 
 Deployed Website:
-![deploy1.jpg](./deploy1.jpg)
-![deploy2.jpg](./deploy2.jpg)
+![deploy1.jpg](./deploy1.JPG)
+![deploy2.jpg](./deploy2.JPG)
 
 ## Built With
 
