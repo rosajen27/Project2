@@ -24,10 +24,9 @@ function addSong(event, data = {}) {
 	// }
 	//
 	// and then pass formattedDate instead of data below on line 29
-	axios
-		.post("/api/playlist", {
-			data,
-		})
+	axios.post("/api/playlist", {
+		data,
+	})
 		.then(function (response) {
 			console.log(response);
 		})
