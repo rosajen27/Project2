@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2020": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 11
+    },
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+            //delete windows and replace with unix if on mac
+        ],
+        "quotes": [
+            "error",
+            "double" 
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}
