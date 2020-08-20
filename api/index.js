@@ -10,7 +10,9 @@ const connection = require("../config/connection");
 router.get("/playlist", function (req, res) {
 	// MYSQL QUERY
 	connection.query("SELECT * FROM playlist", function (err, results, fields) {
-		if (err) throw err;
+		if (err) {
+			throw err;
+		}
 		res.json(results);
 		console.log(results);
 	});
