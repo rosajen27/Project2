@@ -4,6 +4,8 @@ Songster is a mobile custom playlist creator that enables users to create awesom
 
 Users can also browse through top playlists of their favorite genre and add it to their playlist with just a few clicks!
 
+https://docs.google.com/presentation/d/1XaiWbUpmyV5BLShdbyuCQvZHcfywRZrk8PsynaI1KAI/edit?usp=sharing
+
 
 ## Table of Contents
 * [Deployment](#deployment)
