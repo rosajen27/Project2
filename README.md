@@ -21,7 +21,7 @@ https://docs.google.com/presentation/d/1XaiWbUpmyV5BLShdbyuCQvZHcfywRZrk8PsynaI1
 
 Deployed Website:https://songster-project.herokuapp.com/
 
-![deploy1.jpg](./deploy1.JPG)
+![deploy1.jpg](./songster.png)
 ![deploy2.jpg](./deploy2.JPG)
 
 ## Built With
