@@ -1,10 +1,6 @@
 # Songster
 
-Songster is a mobile custom playlist creator that enables users to create awesome playlists of their favorite songs. 
-
-Users can also browse through top playlists of their favorite genre and add it to their playlist with just a few clicks!
-
-https://docs.google.com/presentation/d/1XaiWbUpmyV5BLShdbyuCQvZHcfywRZrk8PsynaI1KAI/edit?usp=sharing
+Songster is a mobile custom playlist creator that enables users to create awesome playlists of their favorite songs. Users can also browse through top playlists of their favorite genre and add it to their playlist with just a few clicks!
 
 
 ## Table of Contents
@@ -21,26 +17,18 @@ https://docs.google.com/presentation/d/1XaiWbUpmyV5BLShdbyuCQvZHcfywRZrk8PsynaI1
 
 Deployed Website:https://songster-project.herokuapp.com/
 
-![deploy1.jpg](./songster.png)
 ![deploy2.jpg](./deploy2.JPG)
 
 ## Built With
 
+
+* HTML
+* CSS
+* JavaScript
 * Node.js
 * Express
 * MySQL
 * Handlebars
-* ORM
-* HTML
-* CSS
-* Foundations
-
-## Installation 
-
-* npm install
-* npm run setup:db
-* node server.js
-
 
 ## Authors
   - **Felix Colon**
